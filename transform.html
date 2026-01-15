@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>translate</title>
+    <style>
+        .container, .box{
+            height: 200px;
+            width: 200px;
+
+        }
+        .container{
+            border: 1px solid tan;
+            background-color: red;
+        }
+
+        .box{
+            border: 1px solid teal;
+            background-color: aqua;
+            /* transform: rotate(-45deg); */
+            /* transform: scale(.5); */
+            /* transform: translateX(100px); */
+            /* transform: translateY(50px); */
+
+            /* transform: translateX(50px) rotate(-45deg) scale(.25); */
+            transition: 0.4s;
+        }
+        .box:hover{
+            transform: translateX(20px) rotate(90deg) scale(.5);
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box -1</div>
+    </div>
+    <div class="container">
+        <div class="box">box -2</div>
+    </div>
+    <div class="container">
+        <div class="box">box -3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable CSS</title>
+
+    <style>
+        :root{
+            --primary-color: green;
+        }
+
+        h1{
+            color: var(--primary-color);
+        }
+        p{
+            border: 1px solid var(--primary-color);
+        }
+        h5{
+            background-color: var(--primary-color);
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: 200px calc(100% - 200px - 20px); 
+            grid-template-rows: 500px;
+            gap: 20px;
+        }
+        .side_bar{
+            background-color: aquamarine;
+        }
+        .content{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello bangladesh</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ipsa.</p>
+    <h5>hello Pakistan</h5>
+    <h3>I love my country</h3>
+
+    <div class="container">
+        <div class="side_bar">side_bar</div>
+        <div class="content">content</div>
+    </div>
+</body>
+</html>
